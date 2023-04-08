@@ -6,27 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link type="text/css" href="/dist/output.css" rel="stylesheet">
+  <script src="index.js"></script>
 </head>
 
-<body class="grid bg-[#F3F3FB] h-screen place-content-center">
-  <div class="relative  w-full">
-    <div class="absolute top-0 -left-10  w-[42rem] h-[39rem] opacity-90 bg-sky-50 rounded-full mix-blend-multiply filter blur-xl">
+<body class="grid bg-[#F3F3FB] h-screen w-full place-content-center">
+  <div class="absolute md:relative w-full">
+    <div class="absolute animate-blob top-0 -left-10  w-[42rem] h-[39rem] opacity-90 bg-sky-100 rounded-full mix-blend-multiply filter blur-xl">
     </div>
-    <div class="absolute top-01 -left-8  w-[42rem] h-[39rem] opacity-90 bg-sky-50 rounded-full mix-blend-multiply filter blur-xl">
+    <div class="absolute animate-blob top-0 -left-8  w-[42rem] h-[39rem] opacity-90 bg-sky-100 rounded-full mix-blend-multiply filter blur-xl">
     </div>
-    <div class="absolute top-0 -right-8 w-[42rem] h-[39rem] opacity-90 bg-sky-50 rounded-full mix-blend-multiply filter blur-xl">
+    <div class="absolute animate-blob top-0 -right-8 w-[42rem] h-[39rem] opacity-90 bg-sky-100 rounded-full mix-blend-multiply filter blur-xl">
     </div>
-    <div class="absolute top-32 -right-10 w-[42rem] h-[39rem] opacity-90 bg-sky-50 rounded-full mix-blend-multiply filter blur-xl">
+    <div class="absolute animate-blob top-32 -right-10 w-[42rem] h-[39rem] opacity-90 bg-sky-100 rounded-full mix-blend-multiply filter blur-xl">
     </div>
 
   </div>
 
-  <div class="flex flex-col p-1 border-box  w-[50rem] h-[42rem] bg-slate-50 opacity-95 rounded-lg shadow-sm">
-    <div class="flex h-24 p-5 items-center justify-between border-b-[0.05rem]">
+  <div class="flex flex-col p-1 border-box w-[25rem] ml-72 md:ml-0 h-[45rem] md:w-[50rem] md:h-[42rem] bg-slate-50 opacity-95 rounded-lg shadow-sm">
+    <div class="flex h-24 p-5 items-center justify-between border-b-[0.05rem] ">
       <div class="flex gap-4 items-center">
         <div class="w-12 h-12 rounded-full transition-all bg-white border-[0.09rem] border-sky-500 cursor-pointer hover:scale-105 shadow-md shadow-sky-100 hover:shadow-sky-200 border-opacity-30">
-          <svg class="align-center scale-125 text-sky-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <svg class="align-center scale-125 stroke-1 text-sky-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           
@@ -36,8 +37,8 @@
           <div class="flex">
 
             <div class="flex items-center gap-1 text-xs font-semibold text-sky-400 box-border">
-              <div class="w-2.5 h-2.5 rounded-full bg-sky-400"></div>
-              <span class="pb-[0.08rem]">Online</span>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+              <span class="pb-[0.08rem] text-slate-500">Online</span>
             </div>
           </div>
         </div>
@@ -65,22 +66,22 @@
         </div>
         </div>
       </div>
-      <div class="grid p-5 gap-3">
+      <!--<div class="relative w-full h-3 bg-gradient-to-b from-slate-200 z-10 "></div>-->
+      <div class="flex flex-col p-5 gap-3 h-full items-end overflow-auto" id="chat">
 
-        <div class="relative w-[4.5rem] odd:mr-64 min-w-fit flex items-center p-3 h-auto even:bg-sky-500 even:shadow-sky-300 odd:bg-white odd:text-slate-900 even:ml-64 even:justify-self-end
-        box-border rounded-md odd:rounded-tl-none even:rounded-tr-none shadow-md text-white text-sm"><span class="mr-3">Olá, como vai ? m maiores asperiores? lore</span> <span class="absolute bottom-0 right-0 text-[0.45rem] -mb-0.5 mr-1">19:54</span></div>
-
-        <div class="relative w-[4.5rem] odd:mr-64 min-w-fit flex items-center p-3 h-auto even:bg-sky-500 even:shadow-sky-300 odd:bg-white odd:text-slate-900 even:ml-64 even:justify-self-end
-        box-border rounded-md odd:rounded-tl-none even:rounded-tr-none shadow-md text-white text-sm"><span class="mr-3">Olá, como vai ? m maiores asperiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nisi, laboriosam illo qui quod incidunt possimus dignissimos eveniet enim mollitia provident ipsam aperiam expedita hic inventore illum officiis aspernatur velit.</span> <span class="absolute bottom-0 right-0 text-[0.45rem] -mb-0.5 mr-1">19:54</span></div>
-
-        <div class="relative w-[4.5rem] odd:mr-64 min-w-fit flex items-center p-3 h-auto even:bg-sky-500 even:shadow-sky-300 odd:bg-white odd:text-slate-900 even:ml-64 even:justify-self-end
-        box-border rounded-md odd:rounded-tl-none even:rounded-tr-none shadow-md text-white text-sm"><span class="mr-3">Olá, como vai ? m maiores asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error totam possimus earum ad in vel nobis explicabo itaque natus quae, cum aliquam id dicta, cumque ipsum porro commodi exercitationem quisquam.</span> <span class="absolute bottom-0 right-0 text-[0.45rem] -mb-0.5 mr-1">19:54</span></div>
-        
-        <div class="relative w-[4.5rem] odd:mr-64 min-w-fit flex items-center p-3 h-auto even:bg-sky-500 even:shadow-sky-300 odd:bg-white odd:text-slate-900 even:ml-64 even:justify-self-end
-        box-border rounded-md odd:rounded-tl-none even:rounded-tr-none shadow-md text-white text-sm"><span class="mr-3">Olá, como vai ? m maiores asperiores? lore</span> <span class="absolute bottom-0 right-0 text-[0.45rem] -mb-0.5 mr-1">19:54</span></div>
-
-       
       </div>
+
+      <!--<div class="relative w-full h-3 bg-gradient-to-t from-slate-200 bg-opacity-0"></div>-->
+      <div class="relative flex p-3 gap-2 items-center">
+        <input id="message" class="relative w-full outline-none rounded-md transition-shadow p-2 shadow-md shadow-slate-200 focus:shadow-slate-300" placeholder="Digite a mensagem aqui..." type="text" >
+        <button onclick="sendMessage()" class="
+          absolute right-0 w-10 h-10 pl-0.5 mr-3 rounded-r-md bg-sky-500 shadow-sm shadow-slate-200 focus:shadow-slate-300  hover:shadow-md hover:shadow-sky-300 transition-all">
+          <svg class="align-center  text-white scale-50 stroke-[2.05]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+          </svg>
+        </button>
+      </div>
+      
     </div>
   </div>
 
