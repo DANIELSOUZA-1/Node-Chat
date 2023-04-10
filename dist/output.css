@@ -564,18 +564,6 @@ video {
   z-index: 10;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
-.m-auto {
-  margin: auto;
-}
-
-.m-80 {
-  margin: 20rem;
-}
-
 .-mb-0 {
   margin-bottom: -0px;
 }
@@ -584,8 +572,16 @@ video {
   margin-bottom: -0.125rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .ml-64 {
   margin-left: 16rem;
+}
+
+.ml-72 {
+  margin-left: 18rem;
 }
 
 .mr-1 {
@@ -594,26 +590,6 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mr-64 {
-  margin-right: 16rem;
-}
-
-.ml-80 {
-  margin-left: 20rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.ml-72 {
-  margin-left: 18rem;
-}
-
-.ml-0 {
-  margin-left: 0px;
 }
 
 .mr-auto {
@@ -664,8 +640,8 @@ video {
   height: 39rem;
 }
 
-.h-\[42rem\] {
-  height: 42rem;
+.h-\[45rem\] {
+  height: 45rem;
 }
 
 .h-fit {
@@ -679,26 +655,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-\[50rem\] {
-  height: 50rem;
-}
-
-.h-\[40rem\] {
-  height: 40rem;
-}
-
-.h-\[35rem\] {
-  height: 35rem;
-}
-
-.h-\[45rem\] {
-  height: 45rem;
 }
 
 .w-10 {
@@ -721,6 +677,10 @@ video {
   width: 1.5rem;
 }
 
+.w-\[25rem\] {
+  width: 25rem;
+}
+
 .w-\[4\.5rem\] {
   width: 4.5rem;
 }
@@ -729,29 +689,13 @@ video {
   width: 42rem;
 }
 
-.w-\[50rem\] {
-  width: 50rem;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-\[15rem\] {
-  width: 15rem;
-}
-
-.w-\[25rem\] {
-  width: 25rem;
 }
 
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.max-w-\[15rem\] {
-  max-width: 15rem;
 }
 
 .max-w-\[25rem\] {
@@ -786,11 +730,11 @@ video {
   }
 
   33% {
-    transform: translate(30px, -50px) scale(1.2);
+    transform: translate(20px, -30px) scale(1.1);
   }
 
   66% {
-    transform: translate(-20px, 20px) scale(1.3);
+    transform: translate(-10px, 10px) scale(1.2);
   }
 
   100% {
@@ -840,10 +784,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.justify-self-start {
-  justify-self: start;
 }
 
 .justify-self-end {
@@ -1150,10 +1090,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:relative {
     position: relative;
   }
@@ -1164,10 +1100,6 @@ video {
 
   .md\:h-\[42rem\] {
     height: 42rem;
-  }
-
-  .md\:h-\[35rem\] {
-    height: 35rem;
   }
 
   .md\:w-\[50rem\] {
